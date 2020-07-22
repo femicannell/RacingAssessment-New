@@ -88,6 +88,10 @@ namespace RacingAssessment
         {
             for (int i = 0; i < 4; i++)
             {
+
+                GamblerNum = i;
+
+
                 if (i == 4)
                 {
                     //if the loop runs longer than it is supposed to
@@ -95,6 +99,8 @@ namespace RacingAssessment
                 }
                 if (myGambler[GamblerNum].Party == WinningParty)
                 {
+                    
+
                     //if the gambler in this instance of the loop placed their bet on the winning party, they win and their balance is updated and displayed
                     myGambler[GamblerNum].Balance += myGambler[GamblerNum].Bet;
                     lbxBets.Items.Add(WinningParty + " and " + myGambler[GamblerNum].GamblerName + " won and now has $" + myGambler[GamblerNum].Balance);
