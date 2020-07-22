@@ -161,7 +161,7 @@ namespace RacingAssessment
                 udBet.Value = (decimal)CurrentGambler.Balance;
                 cbxParty.SelectedItem = null;
 
-                //not working yet... :((((((((((((
+                //not working yet... :(((((((((((
                 GamblerNum = Factory.SetGamblerNumber(CurrentGambler.GamblerName);
             }
         }
