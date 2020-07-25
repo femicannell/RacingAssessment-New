@@ -14,14 +14,13 @@ namespace RacingAssessment
 {
     public partial class Form1 : Form
     {
-
         //Create my parties and gamblers in arrays
         Party[] party = new Party[4]; //all our parties
         Gambler[] myGambler = new Gambler[4]; //all our gamblers
         public int GamblerNum { get; set; }
         Gambler CurrentGambler = new Karen(); //used in the code for a default gambler
 
-        //which party wins
+        //a string that will contain the party that wins the race
         private string WinningParty;
 
         public Form1()
@@ -46,27 +45,32 @@ namespace RacingAssessment
 
         private void LoadGamblers()
         {
-
             for (int i = 0; i < 4; i++)
             {
                 //loading each gambler from the Factory class
                 myGambler[i] = Factory.GetAGambler(i);
             }
+        }
 
+        public Random RandomGenerator()
+        {
+            var numRandom = new Random();
+            return (numRandom);
         }
 
         private void StartRace()
         {
-            var numRandom = new Random();
+            //create a random number generator - this is used for moving the pictures across the screen
+            var numRandom = RandomGenerator();
             bool end = false;
 
             while (!end) //while nobody has reached the end
             {
-                int distance = ActiveForm.Width - pbx1.Width - 30;
+                int distance = ActiveForm.Width - pbx1.Width - 30; //an int containing how far along the screen the picturebox is
 
                 for (int i = 0; i < party.Length; i++)
                 {
-                    //Thread.Sleep(1); //slows the program down so numRandom can ACTUALLY be random - seed is milliseconds
+                    // WHY NOT WORK ?????? Thread.Sleep(1); //slows the program down so numRandom can ACTUALLY be random - seed is milliseconds
                     party[i].PartyPB.Left += numRandom.Next(1, 5); //moves the party leader along the screen - change Next to make bigger jumps for leaders
                     if (party[i].PartyPB.Left > distance) //if the party leader is at the end of the screen
                     {
@@ -77,6 +81,7 @@ namespace RacingAssessment
                         //set the "Winner" label to display the winning party and change the background to their colour
                         lblWinner.Text = WinningParty;
                         lblWinner.BackColor = WinningColor;
+                        //changing the text colour for the winner label depending on the background colour. White text for dark backgrounds, black text for lighter backgrounds
                         if (WinningColor == Color.Black || WinningColor == Color.Blue)
                         {
                             lblWinner.ForeColor = Color.White;
@@ -86,7 +91,6 @@ namespace RacingAssessment
                             lblWinner.ForeColor = Color.Black;
                         }
                         
-
                         //run the method to find the winner 
                         FindWinner(WinningParty);
                         break;
@@ -97,17 +101,14 @@ namespace RacingAssessment
 
         //method that takes the winning party and figures out which gamblers have won/lost
         private void FindWinner(string WinningParty)
-
         {
             for (int i = 0; i < 4; i++)
             {
-
                 GamblerNum = i;
-
 
                 if (i == 4)
                 {
-                    //if the loop runs longer than it is supposed to
+                    //if the loop runs longer than it is supposed to -DELETE THIS LATER AND TEST
                     break;
                 }
                 if (myGambler[GamblerNum].Party == WinningParty)
@@ -115,8 +116,6 @@ namespace RacingAssessment
                     //if the gambler in this instance of the loop placed their bet on the winning party, they win and their balance is updated and displayed
                     myGambler[GamblerNum].Balance += myGambler[GamblerNum].Bet;
                     lbxBets.Items.Add(WinningParty + " and " + myGambler[GamblerNum].GamblerName + " won and now has $" + myGambler[GamblerNum].Balance);
-
-                    
                 }
                 else
                 {
