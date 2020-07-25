@@ -13,5 +13,6 @@ namespace RacingAssessment.Business
         public string PartyName { get; set; }
         public int Travelled { get; set; }
         public PictureBox PartyPB { get; set; }
+        public Color PartyColor { get; set; }
     }
 }

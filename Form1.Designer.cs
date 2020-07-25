@@ -93,7 +93,7 @@
             0,
             0,
             0});
-            this.udBet.Location = new System.Drawing.Point(705, 459);
+            this.udBet.Location = new System.Drawing.Point(696, 408);
             this.udBet.Name = "udBet";
             this.udBet.Size = new System.Drawing.Size(85, 20);
             this.udBet.TabIndex = 4;
@@ -101,7 +101,7 @@
             // rbKaren
             // 
             this.rbKaren.AutoSize = true;
-            this.rbKaren.Location = new System.Drawing.Point(612, 439);
+            this.rbKaren.Location = new System.Drawing.Point(603, 388);
             this.rbKaren.Name = "rbKaren";
             this.rbKaren.Size = new System.Drawing.Size(53, 17);
             this.rbKaren.TabIndex = 5;
@@ -113,7 +113,7 @@
             // rbBecky
             // 
             this.rbBecky.AutoSize = true;
-            this.rbBecky.Location = new System.Drawing.Point(612, 462);
+            this.rbBecky.Location = new System.Drawing.Point(603, 411);
             this.rbBecky.Name = "rbBecky";
             this.rbBecky.Size = new System.Drawing.Size(55, 17);
             this.rbBecky.TabIndex = 6;
@@ -125,7 +125,7 @@
             // rbBrad
             // 
             this.rbBrad.AutoSize = true;
-            this.rbBrad.Location = new System.Drawing.Point(612, 485);
+            this.rbBrad.Location = new System.Drawing.Point(603, 434);
             this.rbBrad.Name = "rbBrad";
             this.rbBrad.Size = new System.Drawing.Size(47, 17);
             this.rbBrad.TabIndex = 7;
@@ -137,7 +137,7 @@
             // rbJordan
             // 
             this.rbJordan.AutoSize = true;
-            this.rbJordan.Location = new System.Drawing.Point(612, 510);
+            this.rbJordan.Location = new System.Drawing.Point(603, 459);
             this.rbJordan.Name = "rbJordan";
             this.rbJordan.Size = new System.Drawing.Size(57, 17);
             this.rbJordan.TabIndex = 8;
@@ -150,7 +150,7 @@
             // 
             this.lblBetting.AutoSize = true;
             this.lblBetting.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBetting.Location = new System.Drawing.Point(607, 405);
+            this.lblBetting.Location = new System.Drawing.Point(598, 354);
             this.lblBetting.Name = "lblBetting";
             this.lblBetting.Size = new System.Drawing.Size(86, 25);
             this.lblBetting.TabIndex = 9;
@@ -158,7 +158,7 @@
             // 
             // btnGo
             // 
-            this.btnGo.Location = new System.Drawing.Point(12, 420);
+            this.btnGo.Location = new System.Drawing.Point(3, 369);
             this.btnGo.Name = "btnGo";
             this.btnGo.Size = new System.Drawing.Size(70, 70);
             this.btnGo.TabIndex = 10;
@@ -168,7 +168,7 @@
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(102, 420);
+            this.btnReset.Location = new System.Drawing.Point(93, 369);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(70, 70);
             this.btnReset.TabIndex = 11;
@@ -179,14 +179,14 @@
             // lbxBets
             // 
             this.lbxBets.FormattingEnabled = true;
-            this.lbxBets.Location = new System.Drawing.Point(338, 378);
+            this.lbxBets.Location = new System.Drawing.Point(329, 327);
             this.lbxBets.Name = "lbxBets";
             this.lbxBets.Size = new System.Drawing.Size(251, 147);
             this.lbxBets.TabIndex = 12;
             // 
             // btnBet
             // 
-            this.btnBet.Location = new System.Drawing.Point(843, 437);
+            this.btnBet.Location = new System.Drawing.Point(841, 386);
             this.btnBet.Name = "btnBet";
             this.btnBet.Size = new System.Drawing.Size(90, 90);
             this.btnBet.TabIndex = 13;
@@ -198,16 +198,17 @@
             // 
             this.lblWinner.BackColor = System.Drawing.SystemColors.Window;
             this.lblWinner.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWinner.Location = new System.Drawing.Point(214, 436);
+            this.lblWinner.Location = new System.Drawing.Point(205, 385);
             this.lblWinner.Name = "lblWinner";
             this.lblWinner.Size = new System.Drawing.Size(100, 54);
             this.lblWinner.TabIndex = 14;
+            this.lblWinner.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblResults
             // 
             this.lblResults.AutoSize = true;
             this.lblResults.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResults.Location = new System.Drawing.Point(213, 405);
+            this.lblResults.Location = new System.Drawing.Point(204, 354);
             this.lblResults.Name = "lblResults";
             this.lblResults.Size = new System.Drawing.Size(93, 25);
             this.lblResults.TabIndex = 15;
@@ -216,7 +217,7 @@
             // lblAmount
             // 
             this.lblAmount.AutoSize = true;
-            this.lblAmount.Location = new System.Drawing.Point(702, 441);
+            this.lblAmount.Location = new System.Drawing.Point(693, 390);
             this.lblAmount.Name = "lblAmount";
             this.lblAmount.Size = new System.Drawing.Size(43, 13);
             this.lblAmount.TabIndex = 16;
@@ -225,7 +226,7 @@
             // lblParty
             // 
             this.lblParty.AutoSize = true;
-            this.lblParty.Location = new System.Drawing.Point(702, 489);
+            this.lblParty.Location = new System.Drawing.Point(693, 438);
             this.lblParty.Name = "lblParty";
             this.lblParty.Size = new System.Drawing.Size(31, 13);
             this.lblParty.TabIndex = 17;
@@ -239,7 +240,7 @@
             "National",
             "Act",
             "NZ First"});
-            this.cbxParty.Location = new System.Drawing.Point(705, 506);
+            this.cbxParty.Location = new System.Drawing.Point(696, 455);
             this.cbxParty.Name = "cbxParty";
             this.cbxParty.Size = new System.Drawing.Size(121, 21);
             this.cbxParty.TabIndex = 18;
@@ -249,7 +250,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(945, 539);
+            this.ClientSize = new System.Drawing.Size(974, 486);
             this.Controls.Add(this.cbxParty);
             this.Controls.Add(this.lblParty);
             this.Controls.Add(this.lblAmount);

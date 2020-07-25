@@ -34,13 +34,13 @@ namespace RacingAssessment
         private void LoadParties()
         {
             //make an instance of the parties
-            party[0] = new Party { Travelled = 0, PartyPB = pbx1, PartyName = "Labour" };
+            party[0] = new Party { Travelled = 0, PartyPB = pbx1, PartyName = "Labour", PartyColor = Color.Red };
             party[0].PartyPB.BackgroundImage = Resource1.jacinda;
-            party[1] = new Party { Travelled = 0, PartyPB = pbx2, PartyName = "National" };
+            party[1] = new Party { Travelled = 0, PartyPB = pbx2, PartyName = "National", PartyColor = Color.Blue };
             party[1].PartyPB.BackgroundImage = Resource1.muller;
-            party[2] = new Party { Travelled = 0, PartyPB = pbx3, PartyName = "Act" };
+            party[2] = new Party { Travelled = 0, PartyPB = pbx3, PartyName = "Act", PartyColor = Color.Yellow };
             party[2].PartyPB.BackgroundImage = Resource1.seymour;
-            party[3] = new Party { Travelled = 0, PartyPB = pbx4, PartyName = "NZ First" };
+            party[3] = new Party { Travelled = 0, PartyPB = pbx4, PartyName = "NZ First", PartyColor = Color.Black };
             party[3].PartyPB.BackgroundImage = Resource1.winston;
         }
 
@@ -72,7 +72,20 @@ namespace RacingAssessment
                     {
                         end = true; //set variable saying the race is finished
                         WinningParty = party[i].PartyName; //set the winner string to the name of the winning party
-                        MessageBox.Show(WinningParty);
+                        Color WinningColor = party[i].PartyColor; //set the "winning" colour to the colour of the winning party
+
+                        //set the "Winner" label to display the winning party and change the background to their colour
+                        lblWinner.Text = WinningParty;
+                        lblWinner.BackColor = WinningColor;
+                        if (WinningColor == Color.Black || WinningColor == Color.Blue)
+                        {
+                            lblWinner.ForeColor = Color.White;
+                        }
+                        else
+                        {
+                            lblWinner.ForeColor = Color.Black;
+                        }
+                        
 
                         //run the method to find the winner 
                         FindWinner(WinningParty);
@@ -99,11 +112,11 @@ namespace RacingAssessment
                 }
                 if (myGambler[GamblerNum].Party == WinningParty)
                 {
-                    
-
                     //if the gambler in this instance of the loop placed their bet on the winning party, they win and their balance is updated and displayed
                     myGambler[GamblerNum].Balance += myGambler[GamblerNum].Bet;
                     lbxBets.Items.Add(WinningParty + " and " + myGambler[GamblerNum].GamblerName + " won and now has $" + myGambler[GamblerNum].Balance);
+
+                    
                 }
                 else
                 {
@@ -167,7 +180,6 @@ namespace RacingAssessment
                 udBet.Value = (decimal)CurrentGambler.Balance;
                 cbxParty.SelectedItem = null;
 
-                //not working yet... :(((((((((((
                 GamblerNum = Factory.SetGamblerNumber(CurrentGambler.GamblerName);
             }
         }
