@@ -14,8 +14,6 @@ namespace RacingAssessment.Business
             GamblerName = "Karen";
             Party = "";
             Balance = 50;
-            GamblerPhraseWin = "Live Laugh Love xoxo";
-            GamblerPhraseLose = "I want to speak to your manager";
         }
     }
 }

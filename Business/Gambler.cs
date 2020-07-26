@@ -13,7 +13,5 @@ namespace RacingAssessment.Business
         public string Party { get; set; }
         public Single Balance { get; set; }
         public Single Bet { get; set; }
-        public string GamblerPhraseWin { get; set; }
-        public string GamblerPhraseLose { get; set; }
     }
 }

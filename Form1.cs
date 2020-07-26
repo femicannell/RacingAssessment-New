@@ -132,12 +132,17 @@ namespace RacingAssessment
             StartRace();
         }
 
+        public int StartingPoint()
+        {
+            return 10;
+        }
+
         private void btnReset_Click(object sender, EventArgs e)
         {
             //set the party leaders back to their starting positions
             for (int i = 0; i < party.Length; i++)
             {
-                party[i].PartyPB.Left = 10;
+                party[i].PartyPB.Left = StartingPoint();
             }
         }
 

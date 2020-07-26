@@ -14,8 +14,6 @@ namespace RacingAssessment.Business
             GamblerName = "Becky";
             Party = "";
             Balance = 50;
-            GamblerPhraseWin = "Sorry I'm just better than you sweetie";
-            GamblerPhraseLose = "Negative Yelp review on the way";
         }
     }
 }

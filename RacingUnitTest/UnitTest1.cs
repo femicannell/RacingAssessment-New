@@ -12,10 +12,21 @@ namespace RacingUnitTest
         {
             //instantiate a new form
             Form1 myForm = new Form1();
-            //run the method on the form and then pass the message to a variable for testing
+            //run the method on the form and then pass the result to a variable for testing
             var randNum = myForm.RandomGenerator();
-            //is the generated error message showing what it should?
+            //is the random number generator working?
             Assert.IsTrue((randNum.Next(1,5) > 0) && (randNum.Next(1,5) < 6));
+        }
+
+        [TestMethod]
+        public void TestStartingPoint()
+        {
+            //instantiate a new form
+            Form1 myForm = new Form1();
+            //run the method on the form and then pass the starting point to a variable for testing
+            var StartingPoint = myForm.StartingPoint();
+            //is the starting point what it should be?
+            Assert.IsTrue(StartingPoint == 10);
         }
     }
 }
