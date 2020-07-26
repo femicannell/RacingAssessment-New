@@ -47,6 +47,8 @@
             this.lblAmount = new System.Windows.Forms.Label();
             this.lblParty = new System.Windows.Forms.Label();
             this.cbxParty = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbx1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx3)).BeginInit();
@@ -57,7 +59,7 @@
             // pbx1
             // 
             this.pbx1.Location = new System.Drawing.Point(20, 19);
-            this.pbx1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pbx1.Margin = new System.Windows.Forms.Padding(6);
             this.pbx1.Name = "pbx1";
             this.pbx1.Size = new System.Drawing.Size(140, 135);
             this.pbx1.TabIndex = 0;
@@ -66,7 +68,7 @@
             // pbx4
             // 
             this.pbx4.Location = new System.Drawing.Point(20, 458);
-            this.pbx4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pbx4.Margin = new System.Windows.Forms.Padding(6);
             this.pbx4.Name = "pbx4";
             this.pbx4.Size = new System.Drawing.Size(140, 135);
             this.pbx4.TabIndex = 1;
@@ -75,7 +77,7 @@
             // pbx3
             // 
             this.pbx3.Location = new System.Drawing.Point(20, 312);
-            this.pbx3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pbx3.Margin = new System.Windows.Forms.Padding(6);
             this.pbx3.Name = "pbx3";
             this.pbx3.Size = new System.Drawing.Size(140, 135);
             this.pbx3.TabIndex = 2;
@@ -84,7 +86,7 @@
             // pbx2
             // 
             this.pbx2.Location = new System.Drawing.Point(20, 165);
-            this.pbx2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pbx2.Margin = new System.Windows.Forms.Padding(6);
             this.pbx2.Name = "pbx2";
             this.pbx2.Size = new System.Drawing.Size(140, 135);
             this.pbx2.TabIndex = 3;
@@ -97,8 +99,8 @@
             0,
             0,
             0});
-            this.udBet.Location = new System.Drawing.Point(1392, 785);
-            this.udBet.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.udBet.Location = new System.Drawing.Point(1337, 788);
+            this.udBet.Margin = new System.Windows.Forms.Padding(6);
             this.udBet.Name = "udBet";
             this.udBet.Size = new System.Drawing.Size(170, 31);
             this.udBet.TabIndex = 4;
@@ -107,7 +109,7 @@
             // 
             this.rbKaren.AutoSize = true;
             this.rbKaren.Location = new System.Drawing.Point(1206, 746);
-            this.rbKaren.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.rbKaren.Margin = new System.Windows.Forms.Padding(6);
             this.rbKaren.Name = "rbKaren";
             this.rbKaren.Size = new System.Drawing.Size(100, 29);
             this.rbKaren.TabIndex = 5;
@@ -120,7 +122,7 @@
             // 
             this.rbBecky.AutoSize = true;
             this.rbBecky.Location = new System.Drawing.Point(1206, 790);
-            this.rbBecky.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.rbBecky.Margin = new System.Windows.Forms.Padding(6);
             this.rbBecky.Name = "rbBecky";
             this.rbBecky.Size = new System.Drawing.Size(102, 29);
             this.rbBecky.TabIndex = 6;
@@ -133,7 +135,7 @@
             // 
             this.rbBrad.AutoSize = true;
             this.rbBrad.Location = new System.Drawing.Point(1206, 835);
-            this.rbBrad.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.rbBrad.Margin = new System.Windows.Forms.Padding(6);
             this.rbBrad.Name = "rbBrad";
             this.rbBrad.Size = new System.Drawing.Size(88, 29);
             this.rbBrad.TabIndex = 7;
@@ -146,7 +148,7 @@
             // 
             this.rbJordan.AutoSize = true;
             this.rbJordan.Location = new System.Drawing.Point(1206, 883);
-            this.rbJordan.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.rbJordan.Margin = new System.Windows.Forms.Padding(6);
             this.rbJordan.Name = "rbJordan";
             this.rbJordan.Size = new System.Drawing.Size(109, 29);
             this.rbJordan.TabIndex = 8;
@@ -174,7 +176,7 @@
             this.btnGo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGo.ForeColor = System.Drawing.Color.DarkGreen;
             this.btnGo.Location = new System.Drawing.Point(6, 710);
-            this.btnGo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnGo.Margin = new System.Windows.Forms.Padding(6);
             this.btnGo.Name = "btnGo";
             this.btnGo.Size = new System.Drawing.Size(140, 135);
             this.btnGo.TabIndex = 10;
@@ -189,7 +191,7 @@
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.ForeColor = System.Drawing.Color.Red;
             this.btnReset.Location = new System.Drawing.Point(186, 710);
-            this.btnReset.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(6);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(140, 135);
             this.btnReset.TabIndex = 11;
@@ -203,7 +205,7 @@
             this.lbxBets.FormattingEnabled = true;
             this.lbxBets.ItemHeight = 25;
             this.lbxBets.Location = new System.Drawing.Point(658, 629);
-            this.lbxBets.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.lbxBets.Margin = new System.Windows.Forms.Padding(6);
             this.lbxBets.Name = "lbxBets";
             this.lbxBets.Size = new System.Drawing.Size(498, 279);
             this.lbxBets.TabIndex = 12;
@@ -214,7 +216,7 @@
             this.btnBet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBet.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.btnBet.Location = new System.Drawing.Point(1682, 742);
-            this.btnBet.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnBet.Margin = new System.Windows.Forms.Padding(6);
             this.btnBet.Name = "btnBet";
             this.btnBet.Size = new System.Drawing.Size(180, 173);
             this.btnBet.TabIndex = 13;
@@ -247,7 +249,7 @@
             // lblAmount
             // 
             this.lblAmount.AutoSize = true;
-            this.lblAmount.Location = new System.Drawing.Point(1386, 750);
+            this.lblAmount.Location = new System.Drawing.Point(1331, 753);
             this.lblAmount.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblAmount.Name = "lblAmount";
             this.lblAmount.Size = new System.Drawing.Size(85, 25);
@@ -257,7 +259,7 @@
             // lblParty
             // 
             this.lblParty.AutoSize = true;
-            this.lblParty.Location = new System.Drawing.Point(1386, 842);
+            this.lblParty.Location = new System.Drawing.Point(1331, 845);
             this.lblParty.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblParty.Name = "lblParty";
             this.lblParty.Size = new System.Drawing.Size(62, 25);
@@ -272,12 +274,31 @@
             "National",
             "Act",
             "NZ First"});
-            this.cbxParty.Location = new System.Drawing.Point(1392, 875);
-            this.cbxParty.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.cbxParty.Location = new System.Drawing.Point(1337, 878);
+            this.cbxParty.Margin = new System.Windows.Forms.Padding(6);
             this.cbxParty.Name = "cbxParty";
             this.cbxParty.Size = new System.Drawing.Size(238, 33);
             this.cbxParty.TabIndex = 18;
             this.cbxParty.Text = "Select a party...";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(1463, 753);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(105, 25);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Max Bet:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(1574, 753);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(19, 25);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "-";
             // 
             // Form1
             // 
@@ -285,6 +306,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(1948, 935);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.cbxParty);
             this.Controls.Add(this.lblParty);
             this.Controls.Add(this.lblAmount);
@@ -305,7 +328,7 @@
             this.Controls.Add(this.pbx4);
             this.Controls.Add(this.pbx1);
             this.ForeColor = System.Drawing.Color.Crimson;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pbx1)).EndInit();
@@ -339,6 +362,8 @@
         private System.Windows.Forms.Label lblAmount;
         private System.Windows.Forms.Label lblParty;
         private System.Windows.Forms.ComboBox cbxParty;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

@@ -70,7 +70,7 @@ namespace RacingAssessment
 
                 for (int i = 0; i < party.Length; i++)
                 {
-                    // WHY NOT WORK ?????? Thread.Sleep(1); //slows the program down so numRandom can ACTUALLY be random - seed is milliseconds
+                    //Thread.Sleep(1); //slows the program down so numRandom can ACTUALLY be random - seed is milliseconds
                     party[i].PartyPB.Left += numRandom.Next(1, 5); //moves the party leader along the screen - change Next to make bigger jumps for leaders
                     if (party[i].PartyPB.Left > distance) //if the party leader is at the end of the screen
                     {
