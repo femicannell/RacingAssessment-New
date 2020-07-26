@@ -50,6 +50,17 @@ namespace RacingAssessment
                 //loading each gambler from the Factory class
                 myGambler[i] = Factory.GetAGambler(i);
             }
+            //set labels to to their respective gamblers
+            myGambler[0].GamblerLabel  = lblKaren;
+            myGambler[1].GamblerLabel = lblBecky;
+            myGambler[2].GamblerLabel = lblBrad;
+            myGambler[3].GamblerLabel = lblJordan;
+
+            //set radio buttons to their respective gamblers
+            myGambler[0].GamblerRB = rbKaren;
+            myGambler[1].GamblerRB = rbBecky;
+            myGambler[2].GamblerRB = rbBrad;
+            myGambler[3].GamblerRB = rbJordan;
         }
 
         public Random RandomGenerator()
@@ -115,13 +126,20 @@ namespace RacingAssessment
                 {
                     //if the gambler in this instance of the loop placed their bet on the winning party, they win and their balance is updated and displayed
                     myGambler[GamblerNum].Balance += myGambler[GamblerNum].Bet;
-                    lbxBets.Items.Add(WinningParty + " and " + myGambler[GamblerNum].GamblerName + " won and now has $" + myGambler[GamblerNum].Balance);
+                    myGambler[GamblerNum].GamblerLabel.Text = (WinningParty + " and " + myGambler[GamblerNum].GamblerName + " won and now has $" + myGambler[GamblerNum].Balance);
                 }
                 else
                 {
                     //if the gambler in this instance of the loop did not place their bet on the winning party, they lose and their balance is updated and displayed
                     myGambler[GamblerNum].Balance -= myGambler[GamblerNum].Bet;
-                    lbxBets.Items.Add(myGambler[GamblerNum].GamblerName + " lost and now has $" + myGambler[GamblerNum].Balance);
+                    myGambler[GamblerNum].GamblerLabel.Text = (myGambler[GamblerNum].GamblerName + " lost and now has $" + myGambler[GamblerNum].Balance);
+
+                    if (myGambler[GamblerNum].Balance <= 0)
+                    {
+                        myGambler[GamblerNum].GamblerRB.Enabled = false;
+                        myGambler[GamblerNum].GamblerLabel.Text = "BUSTED";
+                        myGambler[GamblerNum].GamblerLabel.ForeColor = Color.Red;
+                    }
                 }
             }
         }
@@ -148,12 +166,21 @@ namespace RacingAssessment
 
         private void btnBet_Click(object sender, EventArgs e)
         {
-            //selecting which party the gambler is betting on
-            myGambler[GamblerNum].Party = cbxParty.SelectedItem.ToString();
-            //setting the gambler's bet value
-            myGambler[GamblerNum].Bet = (float)udBet.Value;
-            //display the bet amount and which party they've chosen
-            lbxBets.Items.Add(myGambler[GamblerNum].GamblerName + " Bets " + myGambler[GamblerNum].Bet + " on " + myGambler[GamblerNum].Party);
+            if (cbxParty.SelectedItem == null)
+            {
+                MessageBox.Show("Please select a party for " + myGambler[GamblerNum].GamblerName + "to bet on");
+            }
+            else
+            {
+                //selecting which party the gambler is betting on
+                myGambler[GamblerNum].Party = cbxParty.SelectedItem.ToString();
+                //setting the gambler's bet value
+                myGambler[GamblerNum].Bet = (float)udBet.Value;
+                //display the bet amount and which party they've chosen
+                myGambler[GamblerNum].GamblerLabel.Text = (myGambler[GamblerNum].GamblerName + " Bets " + myGambler[GamblerNum].Bet + " on " + myGambler[GamblerNum].Party);
+            }
+            
+            
         }
 
         private void AllRB_CheckedChanged(object sender, EventArgs e)

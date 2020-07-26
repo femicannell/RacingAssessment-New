@@ -40,7 +40,6 @@
             this.lblBetting = new System.Windows.Forms.Label();
             this.btnGo = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
-            this.lbxBets = new System.Windows.Forms.ListBox();
             this.btnBet = new System.Windows.Forms.Button();
             this.lblWinner = new System.Windows.Forms.Label();
             this.lblResults = new System.Windows.Forms.Label();
@@ -48,7 +47,11 @@
             this.lblParty = new System.Windows.Forms.Label();
             this.cbxParty = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblMax = new System.Windows.Forms.Label();
+            this.lblKaren = new System.Windows.Forms.Label();
+            this.lblBecky = new System.Windows.Forms.Label();
+            this.lblBrad = new System.Windows.Forms.Label();
+            this.lblJordan = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbx1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx3)).BeginInit();
@@ -99,7 +102,7 @@
             0,
             0,
             0});
-            this.udBet.Location = new System.Drawing.Point(1337, 788);
+            this.udBet.Location = new System.Drawing.Point(1482, 785);
             this.udBet.Margin = new System.Windows.Forms.Padding(6);
             this.udBet.Name = "udBet";
             this.udBet.Size = new System.Drawing.Size(170, 31);
@@ -108,7 +111,7 @@
             // rbKaren
             // 
             this.rbKaren.AutoSize = true;
-            this.rbKaren.Location = new System.Drawing.Point(1206, 746);
+            this.rbKaren.Location = new System.Drawing.Point(723, 746);
             this.rbKaren.Margin = new System.Windows.Forms.Padding(6);
             this.rbKaren.Name = "rbKaren";
             this.rbKaren.Size = new System.Drawing.Size(100, 29);
@@ -121,7 +124,7 @@
             // rbBecky
             // 
             this.rbBecky.AutoSize = true;
-            this.rbBecky.Location = new System.Drawing.Point(1206, 790);
+            this.rbBecky.Location = new System.Drawing.Point(723, 787);
             this.rbBecky.Margin = new System.Windows.Forms.Padding(6);
             this.rbBecky.Name = "rbBecky";
             this.rbBecky.Size = new System.Drawing.Size(102, 29);
@@ -134,7 +137,7 @@
             // rbBrad
             // 
             this.rbBrad.AutoSize = true;
-            this.rbBrad.Location = new System.Drawing.Point(1206, 835);
+            this.rbBrad.Location = new System.Drawing.Point(725, 828);
             this.rbBrad.Margin = new System.Windows.Forms.Padding(6);
             this.rbBrad.Name = "rbBrad";
             this.rbBrad.Size = new System.Drawing.Size(88, 29);
@@ -147,7 +150,7 @@
             // rbJordan
             // 
             this.rbJordan.AutoSize = true;
-            this.rbJordan.Location = new System.Drawing.Point(1206, 883);
+            this.rbJordan.Location = new System.Drawing.Point(725, 869);
             this.rbJordan.Margin = new System.Windows.Forms.Padding(6);
             this.rbJordan.Name = "rbJordan";
             this.rbJordan.Size = new System.Drawing.Size(109, 29);
@@ -161,7 +164,7 @@
             // 
             this.lblBetting.AutoSize = true;
             this.lblBetting.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBetting.Location = new System.Drawing.Point(1196, 681);
+            this.lblBetting.Location = new System.Drawing.Point(715, 681);
             this.lblBetting.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblBetting.Name = "lblBetting";
             this.lblBetting.Size = new System.Drawing.Size(158, 48);
@@ -200,22 +203,12 @@
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
-            // lbxBets
-            // 
-            this.lbxBets.FormattingEnabled = true;
-            this.lbxBets.ItemHeight = 25;
-            this.lbxBets.Location = new System.Drawing.Point(658, 629);
-            this.lbxBets.Margin = new System.Windows.Forms.Padding(6);
-            this.lbxBets.Name = "lbxBets";
-            this.lbxBets.Size = new System.Drawing.Size(498, 279);
-            this.lbxBets.TabIndex = 12;
-            // 
             // btnBet
             // 
             this.btnBet.BackColor = System.Drawing.Color.Gold;
             this.btnBet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBet.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.btnBet.Location = new System.Drawing.Point(1682, 742);
+            this.btnBet.Location = new System.Drawing.Point(1792, 746);
             this.btnBet.Margin = new System.Windows.Forms.Padding(6);
             this.btnBet.Name = "btnBet";
             this.btnBet.Size = new System.Drawing.Size(180, 173);
@@ -249,7 +242,7 @@
             // lblAmount
             // 
             this.lblAmount.AutoSize = true;
-            this.lblAmount.Location = new System.Drawing.Point(1331, 753);
+            this.lblAmount.Location = new System.Drawing.Point(1476, 750);
             this.lblAmount.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblAmount.Name = "lblAmount";
             this.lblAmount.Size = new System.Drawing.Size(85, 25);
@@ -259,7 +252,7 @@
             // lblParty
             // 
             this.lblParty.AutoSize = true;
-            this.lblParty.Location = new System.Drawing.Point(1331, 845);
+            this.lblParty.Location = new System.Drawing.Point(1476, 842);
             this.lblParty.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblParty.Name = "lblParty";
             this.lblParty.Size = new System.Drawing.Size(62, 25);
@@ -274,7 +267,7 @@
             "National",
             "Act",
             "NZ First"});
-            this.cbxParty.Location = new System.Drawing.Point(1337, 878);
+            this.cbxParty.Location = new System.Drawing.Point(1482, 875);
             this.cbxParty.Margin = new System.Windows.Forms.Padding(6);
             this.cbxParty.Name = "cbxParty";
             this.cbxParty.Size = new System.Drawing.Size(238, 33);
@@ -285,28 +278,64 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1463, 753);
+            this.label1.Location = new System.Drawing.Point(1608, 750);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(105, 25);
             this.label1.TabIndex = 19;
             this.label1.Text = "Max Bet:";
             // 
-            // label2
+            // lblMax
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(1574, 753);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(19, 25);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "-";
+            this.lblMax.AutoSize = true;
+            this.lblMax.Location = new System.Drawing.Point(1719, 750);
+            this.lblMax.Name = "lblMax";
+            this.lblMax.Size = new System.Drawing.Size(19, 25);
+            this.lblMax.TabIndex = 20;
+            this.lblMax.Text = "-";
+            // 
+            // lblKaren
+            // 
+            this.lblKaren.BackColor = System.Drawing.Color.White;
+            this.lblKaren.Location = new System.Drawing.Point(856, 740);
+            this.lblKaren.Name = "lblKaren";
+            this.lblKaren.Size = new System.Drawing.Size(586, 35);
+            this.lblKaren.TabIndex = 21;
+            // 
+            // lblBecky
+            // 
+            this.lblBecky.BackColor = System.Drawing.Color.White;
+            this.lblBecky.Location = new System.Drawing.Point(856, 781);
+            this.lblBecky.Name = "lblBecky";
+            this.lblBecky.Size = new System.Drawing.Size(586, 35);
+            this.lblBecky.TabIndex = 22;
+            // 
+            // lblBrad
+            // 
+            this.lblBrad.BackColor = System.Drawing.Color.White;
+            this.lblBrad.Location = new System.Drawing.Point(856, 822);
+            this.lblBrad.Name = "lblBrad";
+            this.lblBrad.Size = new System.Drawing.Size(586, 35);
+            this.lblBrad.TabIndex = 23;
+            // 
+            // lblJordan
+            // 
+            this.lblJordan.BackColor = System.Drawing.Color.White;
+            this.lblJordan.Location = new System.Drawing.Point(856, 863);
+            this.lblJordan.Name = "lblJordan";
+            this.lblJordan.Size = new System.Drawing.Size(586, 35);
+            this.lblJordan.TabIndex = 24;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(1948, 935);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(2499, 935);
+            this.Controls.Add(this.lblJordan);
+            this.Controls.Add(this.lblBrad);
+            this.Controls.Add(this.lblBecky);
+            this.Controls.Add(this.lblKaren);
+            this.Controls.Add(this.lblMax);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbxParty);
             this.Controls.Add(this.lblParty);
@@ -314,7 +343,6 @@
             this.Controls.Add(this.lblResults);
             this.Controls.Add(this.lblWinner);
             this.Controls.Add(this.btnBet);
-            this.Controls.Add(this.lbxBets);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnGo);
             this.Controls.Add(this.lblBetting);
@@ -327,7 +355,7 @@
             this.Controls.Add(this.pbx3);
             this.Controls.Add(this.pbx4);
             this.Controls.Add(this.pbx1);
-            this.ForeColor = System.Drawing.Color.Crimson;
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -355,7 +383,6 @@
         private System.Windows.Forms.Label lblBetting;
         private System.Windows.Forms.Button btnGo;
         private System.Windows.Forms.Button btnReset;
-        private System.Windows.Forms.ListBox lbxBets;
         private System.Windows.Forms.Button btnBet;
         private System.Windows.Forms.Label lblWinner;
         private System.Windows.Forms.Label lblResults;
@@ -363,7 +390,11 @@
         private System.Windows.Forms.Label lblParty;
         private System.Windows.Forms.ComboBox cbxParty;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblMax;
+        private System.Windows.Forms.Label lblKaren;
+        private System.Windows.Forms.Label lblBecky;
+        private System.Windows.Forms.Label lblBrad;
+        private System.Windows.Forms.Label lblJordan;
     }
 }
 
