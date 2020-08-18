@@ -83,6 +83,16 @@ namespace RacingAssessment {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap orange_man {
+            get {
+                object obj = ResourceManager.GetObject("orange_man", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap seymour {
             get {
                 object obj = ResourceManager.GetObject("seymour", resourceCulture);

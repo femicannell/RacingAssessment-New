@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace RacingAssessment
-{
+{ 
     public partial class Form1 : Form
     {
         //Create my parties and gamblers in arrays
@@ -124,10 +124,12 @@ namespace RacingAssessment
                 }
                 if (myGambler[GamblerNum].Party == WinningParty)
                 {
+                    if (myGambler[GamblerNum].GamblerLabel.ForeColor != Color.Red)
+                    {
                     //if the gambler in this instance of the loop placed their bet on the winning party, they win and their balance is updated and displayed
                     myGambler[GamblerNum].Balance += myGambler[GamblerNum].Bet;
                     myGambler[GamblerNum].GamblerLabel.Text = (WinningParty + " and " + myGambler[GamblerNum].GamblerName + " won and now has $" + myGambler[GamblerNum].Balance);
-                }
+                }}
                 else
                 {
                     //if the gambler in this instance of the loop did not place their bet on the winning party, they lose and their balance is updated and displayed

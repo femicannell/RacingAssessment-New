@@ -191,7 +191,7 @@
             // 
             this.btnReset.BackColor = System.Drawing.Color.LightSalmon;
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.ForeColor = System.Drawing.Color.Red;
             this.btnReset.Location = new System.Drawing.Point(186, 710);
             this.btnReset.Margin = new System.Windows.Forms.Padding(6);
@@ -199,7 +199,6 @@
             this.btnReset.Size = new System.Drawing.Size(140, 135);
             this.btnReset.TabIndex = 11;
             this.btnReset.Text = " Reset";
-            this.btnReset.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
