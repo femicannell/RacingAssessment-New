@@ -144,6 +144,10 @@ namespace RacingAssessment
                     }
                 }
             }
+            if ((myGambler[0].GamblerRB.Enabled == false) && (myGambler[1].GamblerRB.Enabled == false) && (myGambler[2].GamblerRB.Enabled == false) && (myGambler[3].GamblerRB.Enabled == false))
+            {
+                MessageBox.Show("Game Over!");
+            }
         }
 
         private void btnGo_Click(object sender, EventArgs e)
@@ -170,7 +174,7 @@ namespace RacingAssessment
         {
             if (cbxParty.SelectedItem == null)
             {
-                MessageBox.Show("Please select a party for " + myGambler[GamblerNum].GamblerName + "to bet on");
+                MessageBox.Show("Please select a party for " + myGambler[GamblerNum].GamblerName + " to bet on");
             }
             else
             {
@@ -208,12 +212,12 @@ namespace RacingAssessment
                         CurrentGambler = new Jordan();
                         break;
                 }
+                GamblerNum = Factory.SetGamblerNumber(CurrentGambler.GamblerName); 
                 //set the UpDown maximum value and starting value to the balance of the gambler that is selected and set the combobox to null to ensure they remember to choose a party
-                udBet.Maximum = (decimal)CurrentGambler.Balance;
-                udBet.Value = (decimal)CurrentGambler.Balance;
                 cbxParty.SelectedItem = null;
-
-                GamblerNum = Factory.SetGamblerNumber(CurrentGambler.GamblerName);
+                udBet.Maximum = (decimal)myGambler[GamblerNum].Balance;
+                udBet.Value = (decimal)myGambler[GamblerNum].Balance;
+                lblMax.Text = ("$" + Convert.ToString(myGambler[GamblerNum].Balance));
             }
         }
     }

@@ -13,7 +13,7 @@ namespace RacingAssessment.Business
         {
             GamblerName = "Becky";
             Party = "";
-            Balance = 40;
+            Balance = 50;
         }
     }
 }
